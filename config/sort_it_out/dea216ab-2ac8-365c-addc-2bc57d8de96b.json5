@@ -1,0 +1,14 @@
+{
+	// - default: false
+	invertSorting: false,
+	// - default: [DISPLAY_NAME, COUNT, DURABILITY]
+	comparators: [
+		"DISPLAY_NAME",
+		"COUNT",
+		"DURABILITY"
+	],
+	/* - default: DOUBLE_CLICK_EMPTY_SLOT
+	   - must be one of: PRESS_OFFHAND_KEY, PRESS_OFFHAND_KEY_EMPTY_SLOT, DOUBLE_CLICK_EMPTY_SLOT
+	*/
+	slotSortingTrigger: "DOUBLE_CLICK_EMPTY_SLOT"
+}

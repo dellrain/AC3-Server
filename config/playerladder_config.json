@@ -1,0 +1,13 @@
+{
+  "lastLoadedVersion": "0.7.1",
+  "server": {
+    "mode": "RIDE",
+    "pickUpLimit": 16,
+    "stepUpLimit": 16,
+    "interactWithAnyLiving": false,
+    "rideExtension": true
+  },
+  "client": {
+    "allowInteractions": true
+  }
+}

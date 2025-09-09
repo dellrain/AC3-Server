@@ -1,0 +1,340 @@
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 2025-09-09 00:35:05
+Description: Ticking entity
+
+java.lang.NoSuchMethodError: 'boolean net.minecraft.class_1451.method_6121(net.minecraft.class_3218, net.minecraft.class_1297)'
+	at knot//net.minecraft.class_1451.GrumpyState(class_1451.java:1544)
+	at knot//net.minecraft.class_1451.MoodSystem(class_1451.java:1369)
+	at knot//net.minecraft.class_1451.handler$zoh002$enhanced-cats$onTick(class_1451.java:751)
+	at knot//net.minecraft.class_1451.method_5773(class_1451.java)
+	at knot//net.minecraft.class_3218.method_18762(class_3218.java:770)
+	at knot//net.minecraft.class_1937.method_18472(class_1937.java:498)
+	at knot//net.minecraft.class_3218.method_31420(class_3218.java:408)
+	at knot//net.minecraft.class_5574.method_31791(class_5574.java:54)
+	at knot//net.minecraft.class_3218.method_18765(class_3218.java:372)
+	at knot//net.minecraft.server.MinecraftServer.method_3813(MinecraftServer.java:1021)
+	at knot//net.minecraft.class_3176.method_3813(class_3176.java:299)
+	at knot//net.minecraft.server.MinecraftServer.method_3748(MinecraftServer.java:912)
+	at knot//net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:697)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:281)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at knot//net.minecraft.class_1451.GrumpyState(class_1451.java:1544)
+	at knot//net.minecraft.class_1451.MoodSystem(class_1451.java:1369)
+	at knot//net.minecraft.class_1451.handler$zoh002$enhanced-cats$onTick(class_1451.java:751)
+	at knot//net.minecraft.class_1451.method_5773(class_1451.java)
+	at knot//net.minecraft.class_3218.method_18762(class_3218.java:770)
+	at knot//net.minecraft.class_1937.method_18472(class_1937.java:498)
+	at knot//net.minecraft.class_3218.method_31420(class_3218.java:408)
+	at knot//net.minecraft.class_5574.method_31791(class_5574.java:54)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:cat (net.minecraft.class_1451)
+	Entity ID: 6553
+	Entity Name: Cat
+	Entity's Exact location: 860.81, 63.00, 1679.76
+	Entity's Block location: World: (860,63,1679), Section: (at 12,15,15 in 53,3,104; chunk contains blocks 848,-64,1664 to 863,319,1679), Region: (1,3; contains chunks 32,96 to 63,127, blocks 512,-64,1536 to 1023,319,2047)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at knot//net.minecraft.class_1937.method_18472(class_1937.java:498)
+	at knot//net.minecraft.class_3218.method_31420(class_3218.java:408)
+	at knot//net.minecraft.class_5574.method_31791(class_5574.java:54)
+	at knot//net.minecraft.class_3218.method_18765(class_3218.java:372)
+	at knot//net.minecraft.server.MinecraftServer.method_3813(MinecraftServer.java:1021)
+	at knot//net.minecraft.class_3176.method_3813(class_3176.java:299)
+	at knot//net.minecraft.server.MinecraftServer.method_3748(MinecraftServer.java:912)
+	at knot//net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:697)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:281)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+-- Affected level --
+Details:
+	All players: 1 total; [class_3222['AlexMilash'/1, l='ServerLevel[world]', x=861.03, y=65.87, z=1660.18]]
+	Chunk stats: 4274
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,75,0), Section: (at 0,11,0 in 0,4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 33544123 game time, 36274431 day time
+	Level name: world
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Commands: false
+	Level weather: Rain time: 15539 (now: false), thunder time: 7113 (now: false)
+	Known server brands: fabric, vanilla
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 1166
+Stacktrace:
+	at knot//net.minecraft.class_3218.method_8538(class_3218.java:1693)
+	at knot//net.minecraft.server.MinecraftServer.method_3813(MinecraftServer.java:1024)
+	at knot//net.minecraft.class_3176.method_3813(class_3176.java:299)
+	at knot//net.minecraft.server.MinecraftServer.method_3748(MinecraftServer.java:912)
+	at knot//net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:697)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:281)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 22.0.2, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 2433108624 bytes (2320 MiB) / 3909091328 bytes (3728 MiB) up to 10737418240 bytes (10240 MiB)
+	CPUs: 12
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 5600 6-Core Processor              
+	Identifier: AuthenticAMD Family 25 Model 33 Stepping 2
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.49
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce GTX 1060 6GB
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 6144.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.7216
+	Graphics card #1 name: Radeon RX 570 Series
+	Graphics card #1 vendor: Advanced Micro Devices, Inc.
+	Graphics card #1 VRAM (MiB): 4096.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 31.0.21923.11000
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.47
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 3.47
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 27092.70
+	Virtual memory used (MiB): 25933.37
+	Swap memory total (MiB): 10785.72
+	Swap memory used (MiB): 1421.47
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 17459.15, total: 246134.31
+	Space in storage for workdir (MiB): available: 58138.09, total: 729997.81
+	JVM Flags: 1 total; -Xmx10G
+	Fabric Mods: 
+		alternate-current: Alternate Current 1.9.0
+		animal_armor_trims: Animal Armor Trims 2.0.0
+		another_furniture: Another Furniture 4.0.0
+		architectury: Architectury 13.0.8
+		armored-elytra: Armored Elytra 1.1.0
+		balm: Balm 21.0.49
+			kuma_api: KumaAPI 21.0.5
+		beautifiedchatserver: Beautified Chat Server 2.7
+		beb: Beautiful Enchanted Books 5.0.0
+		betterdungeons: YUNG's Better Dungeons 1.21.1-Fabric-5.1.4
+		betterfortresses: YUNG's Better Nether Fortresses 1.21.1-Fabric-3.1.5
+		bettermineshafts: YUNG's Better Mineshafts 1.21.1-Fabric-5.1.1
+		biomeswevegone: Oh The Biomes We've Gone 2.4.7
+		c2me: Concurrent Chunk Management Engine 0.3.0+alpha.0.320+1.21.1
+			c2me-base: Concurrent Chunk Management Engine (Base) 0.3.0+alpha.0.320+1.21.1
+			c2me-fixes-chunkio-threading-issues: Concurrent Chunk Management Engine (Fixes/Chunk IO/Threading Issues) 0.3.0+alpha.0.320+1.21.1
+			c2me-fixes-general-threading-issues: Concurrent Chunk Management Engine (Fixes/General/Threading Issues) 0.3.0+alpha.0.320+1.21.1
+			c2me-fixes-worldgen-threading-issues: Concurrent Chunk Management Engine (Fixes/WorldGen/Threading Issues) 0.3.0+alpha.0.320+1.21.1
+			c2me-fixes-worldgen-vanilla-bugs: Concurrent Chunk Management Engine (Fixes/WorldGen/Vanilla Bugs) 0.3.0+alpha.0.320+1.21.1
+			c2me-notickvd: Concurrent Chunk Management Engine (No Tick View Distance) 0.3.0+alpha.0.320+1.21.1
+			c2me-opts-allocs: Concurrent Chunk Management Engine (Optimizations/Memory Allocations) 0.3.0+alpha.0.320+1.21.1
+			c2me-opts-chunk-access: Concurrent Chunk Management Engine (Optimizations/Chunk Access) 0.3.0+alpha.0.320+1.21.1
+			c2me-opts-chunkio: Concurrent Chunk Management Engine (Optimizations/Chunk IO) 0.3.0+alpha.0.320+1.21.1
+			c2me-opts-dfc: Concurrent Chunk Management Engine (Optimizations/Density Function Compiler) 0.3.0+alpha.0.320+1.21.1
+			c2me-opts-math: Concurrent Chunk Management Engine (Optimizations/Math) 0.3.0+alpha.0.320+1.21.1
+			c2me-opts-natives-math: Concurrent Chunk Management Engine (Optimizations/Natives Math) 0.3.0+alpha.0.320+1.21.1
+			c2me-opts-scheduling: Concurrent Chunk Management Engine (Optimizations/Scheduling) 0.3.0+alpha.0.320+1.21.1
+			c2me-opts-worldgen-general: Concurrent Chunk Management Engine (Optimizations/General WorldGen) 0.3.0+alpha.0.320+1.21.1
+			c2me-opts-worldgen-vanilla: Concurrent Chunk Management Engine (Optimizations/Vanilla WorldGen) 0.3.0+alpha.0.320+1.21.1
+			c2me-rewrites-chunk-serializer: Concurrent Chunk Management Engine (Rewrites/Chunk Serializer) 0.3.0+alpha.0.320+1.21.1
+			c2me-rewrites-chunk-system: Concurrent Chunk Management Engine (Rewrites/Chunk System) 0.3.0+alpha.0.320+1.21.1
+			c2me-rewrites-chunkio: Concurrent Chunk Management Engine (Rewrites/Chunk IO) 0.3.0+alpha.0.320+1.21.1
+			c2me-server-utils: Concurrent Chunk Management Engine (Server Utils) 0.3.0+alpha.0.320+1.21.1
+			c2me-threading-lighting: Concurrent Chunk Management Engine (Threading/Lighting) 0.3.0+alpha.0.320+1.21.1
+			com_ibm_async_asyncutil: asyncutil 0.1.0
+			io_reactivex_rxjava3_rxjava: rxjava 3.1.8
+			net_objecthunter_exp4j: exp4j 0.4.8
+			org_jctools_jctools-core: jctools-core 4.0.5
+			org_reactivestreams_reactive-streams: reactive-streams 1.0.4
+		chatheads: Chatheads 0.4+1.21.1
+			polymer-autohost: Polymer (Auto Host) 0.9.14+1.21.1
+				io_netty_netty-codec-http: netty-codec-http 4.1.82
+			polymer-resource-pack: Polymer (Resource Pack) 0.9.14+1.21.1
+				polymer-common: Polymer (Common) 0.9.14+1.21.1
+					packet_tweaker: Packet Tweaker 0.5.5+1.21
+		chunky: Chunky 1.4.23
+		cloth-config: Cloth Config v15 15.0.140
+			cloth-basic-math: cloth-basic-math 0.6.1
+		clumps: Clumps 19.0.0.1
+		collective: Collective 8.3
+		compacthelpcommand: Compact Help Command 2.8
+		companion: Companion 6.1.1+fabric
+		corgilib: CorgiLib 5.0.0.7
+			com_electronwill_night-config_core: core 3.8.2
+			com_electronwill_night-config_toml: toml 3.8.2
+		cristellib: Cristel Lib 1.2.8
+			blue_endless_jankson: jankson 1.2.3
+		elytratrims: Elytra Trims 3.5.9
+			conditional-mixin: conditional mixin 0.6.3
+		enhanced-cats: Enhanced Cats 0.7.1
+		exposure: Exposure 1.9.10
+		fabric-api: Fabric API 0.116.6+1.21.1
+			fabric-api-base: Fabric API Base 0.4.42+6573ed8c19
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.71+b559734419
+			fabric-biome-api-v1: Fabric Biome API (v1) 13.0.31+d527f9fd19
+			fabric-block-api-v1: Fabric Block API (v1) 1.1.0+0bc3503219
+			fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.11+ebb2264e19
+			fabric-command-api-v1: Fabric Command API (v1) 1.2.49+f71b366f19
+			fabric-command-api-v2: Fabric Command API (v2) 2.2.28+6ced4dd919
+			fabric-commands-v0: Fabric Commands (v0) 0.2.66+df3654b319
+			fabric-content-registries-v0: Fabric Content Registries (v0) 8.0.19+b559734419
+			fabric-convention-tags-v1: Fabric Convention Tags 2.1.5+7f945d5b19
+			fabric-convention-tags-v2: Fabric Convention Tags (v2) 2.11.1+a406e79519
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.29+0af3f5a719
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.4.5+6116a37819
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 20.2.33+37516cd619
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 4.0.1+65213ef819
+			fabric-entity-events-v1: Fabric Entity Events (v1) 1.8.0+2b27e0a419
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.7.13+ba9dae0619
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.53+6ced4dd919
+			fabric-item-api-v1: Fabric Item API (v1) 11.2.0+3b3cb2e819
+			fabric-item-group-api-v1: Fabric Item Group API (v1) 4.1.7+def88e3a19
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.6.0+0865547519
+			fabric-loot-api-v2: Fabric Loot API (v2) 3.0.15+3f89f5a519
+			fabric-loot-api-v3: Fabric Loot API (v3) 1.0.3+3f89f5a519
+			fabric-message-api-v1: Fabric Message API (v1) 6.0.14+8aaf3aca19
+			fabric-networking-api-v1: Fabric Networking API (v1) 4.3.0+c7469b2119
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 15.2.1+40875a9319
+			fabric-particles-v1: Fabric Particles (v1) 4.0.2+6573ed8c19
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 5.0.14+248df81c19
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 5.3.1+e3eddc2119
+			fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.49+73761d2e19
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.1.6+1daea21519
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 4.3.0+8dc279b119
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 1.3.1+5b5275af19
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.90+b559734419
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 5.4.3+c24bd99419
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 6.2.0+45b9699719
+		fabric-language-kotlin: Fabric Language Kotlin 1.13.5+kotlin.2.2.10
+			org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 2.2.10
+			org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 2.2.10
+			org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 2.2.10
+			org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 2.2.10
+			org_jetbrains_kotlinx_atomicfu-jvm: atomicfu-jvm 0.29.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.10.2
+			org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.10.2
+			org_jetbrains_kotlinx_kotlinx-datetime-jvm: kotlinx-datetime-jvm 0.7.1
+			org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm: kotlinx-io-bytestring-jvm 0.8.0
+			org_jetbrains_kotlinx_kotlinx-io-core-jvm: kotlinx-io-core-jvm 0.8.0
+			org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm: kotlinx-serialization-cbor-jvm 1.9.0
+			org_jetbrains_kotlinx_kotlinx-serialization-core-jvm: kotlinx-serialization-core-jvm 1.9.0
+			org_jetbrains_kotlinx_kotlinx-serialization-json-jvm: kotlinx-serialization-json-jvm 1.9.0
+		fabricloader: Fabric Loader 0.17.2
+			mixinextras: MixinExtras 0.5.0
+		fconfiglib: FConfigLib 1.1.1
+		ferritecore: FerriteCore 7.0.2-hotfix
+		forgeconfigapiport: Forge Config API Port 21.1.4
+		furnies: Furnies 1.0
+		furniture: [Let's Do] Furniture 1.1.0
+			mixinsquared: MixinSquared 0.3.2-beta.3
+		geckolib: GeckoLib 4 4.7.7
+		glore: Glowing ores 1.4.0
+		immersive_optimization: Immersive Optimization 0.0.5
+		jamlib: JamLib 1.3.5+1.21.1
+		java: Java HotSpot(TM) 64-Bit Server VM 22
+		kiwi: Kiwi Library 15.1.1+fabric
+		krypton: Krypton 0.2.8
+			com_velocitypowered_velocity-native: velocity-native 3.3.0-SNAPSHOT
+		lithium: Lithium 0.15.0+mc1.21.1
+		lithostitched: Lithostitched 1.4.11
+		mcwfurnitures: Macaw's Furniture 3.3.0
+		medieval_nether: Medieval Buildings [Nether Edition] 1.0.1
+		medievalend: Medieval Buildings [The End Edition] 1.0.3
+		merenc: Merge Enchantments 4.2
+		mes: Moog's End Structures 1.4.6-1.21-fabric
+		minecraft: Minecraft 1.21.1
+		mns: Moog's Nether Structures 1.0.8-1.21-fabric
+		modernfix: ModernFix 5.24.3+mc1.21.1
+		monolib: MonoLib 2.1.0
+		mr_ketkets_furnicraft: FurniCraft 4.4
+		mr_lukis_grandcapitals: Luki's Grand Capitals 1.1.2
+		mvs: Moog's Voyager Structures 4.2.9-1.21-fabric
+		netherportalfix: NetherPortalFix 21.1.3
+		noisium: Noisium 2.3.0+mc1.21-1.21.1
+		ohthetreesyoullgrow: Oh The Trees You'll Grow 5.0.14
+		openpartiesandclaims: Open Parties and Claims 0.25.5
+		otterlib: OtterLib 0.2.2.0+1.21.1-fabric
+		patchouli: Patchouli 1.21.1-92-FABRIC
+			fiber: fiber 0.23.0-2
+		pfm: Paladin's Furniture 1.4.3
+		placeholder-api: Placeholder API 2.4.2+1.21
+		playerladder: Player Ladder 0.7.1
+		puzzleslib: Puzzles Lib 21.1.38
+		quickbench: QuickBench 4.4.2+mc.1.21
+		scalablelux: ScalableLux 0.1.0.1+fabric.d0d58ab
+		simple_snowy_fix: Simple Snowy Fix 2.1.4
+		sit-oth3r: Sit! 1.2.4.7+1.21-1.21.1
+		skinrestorer: SkinRestorer 2.4.3+1.21-fabric
+			org_mineskin_java-client: java-client 3.0.6-SNAPSHOT
+		skniro_furniture: skniro's Furniture 1.1.1-1.21.1-Fabric
+		snowrealmagic: Snow! Real Magic! 12.1.2+fabric
+		sort_it_out: Sort It Out! 1.1.2+1.21.1
+		statusbot: statusbot 20.0
+			com_fasterxml_jackson_core_jackson-annotations: jackson-annotations 2.17.2
+			com_fasterxml_jackson_core_jackson-core: jackson-core 2.17.2
+			com_fasterxml_jackson_core_jackson-databind: jackson-databind 2.17.2
+			com_github_carleslc_simple-yaml_simple-yaml: Simple-Yaml 1.8.4
+			com_neovisionaries_nv-websocket-client: nv-websocket-client 2.14
+			com_squareup_okhttp3_okhttp: okhttp 4.12.0
+			com_squareup_okio_okio-jvm: okio-jvm 3.6.0
+			net_dv8tion_jda: JDA 5.3.2
+			net_sf_trove4j_core: core 3.1.0
+			org_apache_commons_commons-collections4: commons-collections4 4.4
+		stevesrealisticsleep: Steve's Realistic Sleep 1.11.2+mc1.21-1.21.1
+		styledplayerlist: Styled Player List 3.5.1+1.21
+			fabric-permissions-api-v0: fabric-permissions-api 0.3.1
+			player-data-api: Player Data API 0.6.0+1.21
+			predicate-api: Predicate API 0.5.0+1.21
+		tectonic: Tectonic 3.0.12
+		terrablender: TerraBlender 4.1.0.8
+		tool_trims: Tool Trims 2.2.2
+		vcinteraction: Voice Chat Interaction 1.21.1-1.0.8
+			polymer-registry-sync-manipulator: Polymer (Registry Sync Manipulator) 0.9.9+1.21
+		visualoverhaul: VisualOverhaul 5.2.1
+			midnightlib: MidnightLib 1.5.7
+		visualworkbench: Visual Workbench 21.1.1
+		voicechat: Simple Voice Chat 1.21.1-2.5.35
+		waystones: Waystones 21.1.22
+		xaerominimap: Xaero's Minimap 25.2.10
+		xaeroworldmap: Xaero's World Map 1.39.12
+		yet_another_config_lib_v3: YetAnotherConfigLib 3.7.1+1.21.1-fabric
+			com_twelvemonkeys_common_common-image: common-image 3.12.0
+			com_twelvemonkeys_common_common-io: common-io 3.12.0
+			com_twelvemonkeys_common_common-lang: common-lang 3.12.0
+			com_twelvemonkeys_imageio_imageio-core: imageio-core 3.12.0
+			com_twelvemonkeys_imageio_imageio-metadata: imageio-metadata 3.12.0
+			com_twelvemonkeys_imageio_imageio-webp: imageio-webp 3.12.0
+			org_quiltmc_parsers_gson: gson 0.2.1
+			org_quiltmc_parsers_json: json 0.2.1
+		yungsapi: YUNG's API 1.21.1-Fabric-5.1.6
+			org_javassist_javassist: javassist 3.29.2-GA
+			org_reflections_reflections: reflections 0.10.2
+	Server Running: true
+	Player Count: 1 / 20; [class_3222['AlexMilash'/1, l='ServerLevel[world]', x=861.03, y=65.87, z=1660.18]]
+	Active Data Packs: vanilla, file/minecraft-dimension-detector-datapack.zip (incompatible), file/ServerSleep.zip (incompatible), fabric, animal_armor_trims (incompatible), another_furniture, balm (incompatible), betterdungeons (incompatible), betterfortresses (incompatible), bettermineshafts (incompatible), biomeswevegone, collective, companion (incompatible), elytratrims (incompatible), exposure, fabric-convention-tags-v2, furnies, furniture, lithostitched, mcwfurnitures (incompatible), medieval_nether (incompatible), medievalend (incompatible), mes, mns (incompatible), mr_ketkets_furnicraft, mr_lukis_grandcapitals, mvs (incompatible), ohthetreesyoullgrow, openpartiesandclaims (incompatible), patchouli (incompatible), pfm, skniro_furniture (incompatible), snowrealmagic (incompatible), stevesrealisticsleep, terrablender (incompatible), tool_trims, vcinteraction, visualworkbench (incompatible), waystones (incompatible), yungsapi (incompatible), pfm-data-resources, tectonic:tectonic
+	Available Data Packs: animal_armor_trims (incompatible), another_furniture, balm (incompatible), betterdungeons (incompatible), betterfortresses (incompatible), bettermineshafts (incompatible), biomeswevegone, bundle, collective, companion (incompatible), elytratrims (incompatible), exposure, fabric, fabric-convention-tags-v2, file/ServerSleep.zip (incompatible), file/minecraft-dimension-detector-datapack.zip (incompatible), furnies, furniture, lithostitched, mcwfurnitures (incompatible), medieval_nether (incompatible), medievalend (incompatible), mes, mns (incompatible), mr_ketkets_furnicraft, mr_lukis_grandcapitals, mvs (incompatible), ohthetreesyoullgrow, openpartiesandclaims (incompatible), patchouli (incompatible), pfm, pfm-data-resources, skniro_furniture (incompatible), snowrealmagic (incompatible), stevesrealisticsleep, tectonic:tectonic, terrablender (incompatible), tool_trims, trade_rebalance, vanilla, vcinteraction, visualworkbench (incompatible), waystones (incompatible), yungsapi (incompatible)
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -5094391577498129832
+	Is Modded: Definitely; Server brand changed to 'fabric'
+	Type: Dedicated Server (map_server.txt)
