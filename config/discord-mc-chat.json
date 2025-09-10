@@ -9,7 +9,7 @@
     "channelId": "1414743544844779520",
     "consoleLogChannelId": "",
     "updateNotificationChannelId": "",
-    "avatarApi": "https://mc-heads.net/avatar/{player_uuid}.png",
+    "avatarApi": "https://mc-heads.net/avatar/{player_textures}.png",
     "broadcastPlayerCommandExecution": true,
     "broadcastSlashCommandExecution": true,
     "announceServerStartStop": true,
@@ -78,5 +78,5 @@
     "onlineChannelTopicForMultiServer": ""
   },
   "latestVersion": "2.5.0",
-  "latestCheckTime": 1757407792151
+  "latestCheckTime": 1757543730127
 }

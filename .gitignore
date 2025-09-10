@@ -8,3 +8,15 @@ Thumbs.db
 build/
 out/
 *.class
+world.rar
+jdk-22/
+eula.txt
+versions/
+patchouli_books/
+pfm/
+logs/
+libraries/
+defaultconfigs/
+crash-reports/
+.mixin.out/
+.fabric/
