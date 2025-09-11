@@ -1,10 +1,6 @@
 {
   "___comment": "AfkPlus-1.21.1-1.7.8 Config",
-<<<<<<< HEAD
-  "config_date": "Thu, 11 Sep 2025 01:46:59 +0300",
-=======
-  "config_date": "Thu, 11 Sep 2025 23:25:53 +0300",
->>>>>>> e93d325 (Update server configs)
+  "config_date": "Fri, 12 Sep 2025 00:11:20 +0300",
   "afk_plus": {
     "enableAfkCommand": true,
     "enableNoAfkCommand": true,
@@ -17,7 +13,7 @@
     "debugMode": false
   },
   "packet": {
-    "timeoutSeconds": 5,
+    "timeoutSeconds": 90,
     "resetOnMovement": true,
     "resetOnLook": true,
     "ignoreAttacks": false,

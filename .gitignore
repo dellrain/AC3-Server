@@ -20,3 +20,4 @@ defaultconfigs/
 crash-reports/
 .mixin.out/
 .fabric/
+config/discord-mc-chat.json
