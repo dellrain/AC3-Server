@@ -21,3 +21,4 @@ crash-reports/
 .mixin.out/
 .fabric/
 config/discord-mc-chat.json
+config/discord-mc-chat-backup.json
